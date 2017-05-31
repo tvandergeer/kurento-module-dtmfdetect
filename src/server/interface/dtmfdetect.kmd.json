@@ -1,5 +1,20 @@
 {
   "name": "dtmfdetect",
   "version": "0.0.1-dev",
-  "kurentoVersion": "^6.0.0"
+  "kurentoVersion": "^6.0.0",
+  "api": {
+      "java": {
+        "packageName": "org.kurento.client",
+        "mavenGroupId": "org.kurento",
+        "mavenArtifactId": "kurento-client"
+      },
+      "js": {
+        "nodeName": "kurento-dtmfdetect-client-filter",
+        "npmDescription": "DtmfDetect filter implementation for kurento media server",
+        "npmGit": "sping/kurento-dtmfdetect-client-filter"
+      }
+  },
+  "implementation": {
+    "cppNamespace": "kurento"
+  }
 }

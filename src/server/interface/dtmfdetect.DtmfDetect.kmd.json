@@ -3,18 +3,35 @@
     {
       "name": "DtmfDetect",
       "extends": "Filter",
-      "doc": "DtmfDetect interface. Documentation about the module",
+      "doc": "This filter detects DTMF tones in an audio stream. When a DTMF tone is found the filter raises a :rom:evnt:`DtmfDetected` event.",
       "constructor": {
-	"doc": "Create an element",
-	"params": [
-	  {
-	    "name": "mediaPipeline",
-	    "doc": "the parent :rom:cls:`MediaPipeline`",
-	    "type": "MediaPipeline",
-	    "final": true
-	  }
-	]
-      }
+        "doc": "Create an element",
+        "params": [
+          {
+            "name": "mediaPipeline",
+            "doc": "the parent :rom:cls:`MediaPipeline`",
+            "type": "MediaPipeline",
+            "final": true
+          }
+        ]
+      },
+      "events": [
+        "DtmfDetected"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "properties": [
+        {
+          "name": "value",
+          "doc": "value of the :term:`DTMF` tone",
+          "type": "String"
+        }
+      ],
+      "extends": "Media",
+      "name": "DtmfDetected",
+      "doc": "Event raised by a :rom:cls:`DtmfDetect` when a DTMF tone is found in the audio being streamed."
     }
   ]
 }

@@ -1,7 +1,7 @@
 #ifndef _GST_DTMF_DETECT_H_
 #define _GST_DTMF_DETECT_H_
 
-#include <gst/video/gstvideofilter.h>
+#include <gst/audio/gstaudiofilter.h>
 
 G_BEGIN_DECLS
 #define GST_TYPE_DTMF_DETECT   (gst_dtmf_detect_get_type())
@@ -15,13 +15,13 @@ typedef struct _GstDtmfDetectPrivate GstDtmfDetectPrivate;
 
 struct _GstDtmfDetect
 {
-  GstVideoFilter base;
+  GstAudioFilter base;
   GstDtmfDetectPrivate *priv;
 };
 
 struct _GstDtmfDetectClass
 {
-  GstVideoFilterClass base_dtmf_detect_class;
+  GstAudioFilterClass base_dtmf_detect_class;
 };
 
 GType gst_dtmf_detect_get_type (void);
