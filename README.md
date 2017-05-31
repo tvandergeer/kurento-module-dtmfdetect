@@ -3,7 +3,7 @@ DTMF detection filter for Kurento to detect DTMF tones in the audio signal
 
 Add this filter in the (audio) path and it will fire the DtmfDetected event when a DTMF tone is detected
 
-This filter is based on the [GStreamer dtmfdetect filter](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/gst-plugins-bad-plugins-dtmfdetect.html)
+This filter is based on the [GStreamer dtmfdetect filter](https://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad-plugins/html/gst-plugins-bad-plugins-dtmfdetect.html) and built using the [kurento module scaffold](http://doc-kurento.readthedocs.io/en/stable/mastering/develop_kurento_modules.html)
 
 ## How to use
 
